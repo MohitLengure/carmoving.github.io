@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.Topsky{
+position: relative;
+height: 352px;
+	background: linear-gradient(#87CEEB,#9393e2,#87CEFA);
+}
+
+.road{
+	position: relative;
+    height: 117px;
+    background: #000;
+}
+.road span {
+	display: block;
+	height: 69px;
+	width: 15px;
+	background-color: #fff;
+	position: absolute;
+	Top: 24px;
+	transform: rotate(90deg);
+	left: 150px;
+}
+span:nth-child(1)
+{
+top: 24px;
+left: 460px;
+transform: rotate(90deg);
+}
+span:nth-child(2)
+{
+top: 24px;
+left: 760px;
+transform: rotate(90deg);
+}
+
+span:nth-child(3)
+{
+top: 24px;
+left: 1060px;
+transform: rotate(90deg);
+}
+
+span:nth-child(4)
+{
+top: 24px;
+left: 1360px;
+transform: rotate(90deg);
+}
+.cloud{
+position: absolute;
+Top: 48px;
+left: 64px;
+width: 20vmin;
+height: 10vmin;
+border-radius: 10vmin 10vmin 0 6vmin;
+background-color: #b5edf9;
+}
+.cloud::after {
+content: "";
+position: absolute;
+width: 20vmin;
+height: 12vmin;
+bottom: 0;
+border-radius: 6rem 10rem 1rem 0;
+background-color: #b5edf9;
+-webkit-transform: translateX(9vmin);
+transform: translateX(9vmin);
+
+}
+
+.cloud::before
+ {
+content: "";
+position: absolute;
+width: 15vmin;
+height: 8vmin;
+bottom: 8vmin;
+border-radius: 20vmin 20vmin 0 0;
+-webkit-transform: translateX(6vmin);
+transform: translateX(6vmin);
+background-color: #b5edf9;
+}
+
+.cloud1{
+	position: absolute;
+	Top: 50px;
+	left: 580px;
+	width: 20vmin;
+	height: 10vmin;
+	border-radius: 10vmin 10vmin 0 6vmin;
+	background-color: #b5edf9;
+}
+.cloud1::after {
+	content: "";
+	position: absolute;
+	width: 20vmin;
+	height: 12vmin;
+	bottom: 0;
+	border-radius: 6rem 10rem 1rem 0;
+	background-color: #b5edf9;
+	-webkit-transform: translateX(9vmin);
+    transform: translateX(9vmin);
+	
+	}
+
+	.cloud1::before
+	 {
+	content: "";
+	position: absolute;
+	width: 15vmin;
+	height: 8vmin;
+	bottom: 8vmin;
+	border-radius: 20vmin 20vmin 0 0;
+	-webkit-transform: translateX(6vmin);
+	transform: translateX(6vmin);
+	background-color: #b5edf9;
+	}
+	.cloud2{
+		position: absolute;
+		Top: 80px;
+		left: 1280px;
+		width: 20vmin;
+		height: 10vmin;
+		border-radius: 10vmin 10vmin 0 6vmin;
+		background-color: #b5edf9;
+	}
+	.cloud2::after {
+		content: "";
+		position: absolute;
+		width: 20vmin;
+		height: 12vmin;
+		bottom: 0;
+		border-radius: 6rem 10rem 1rem 0;
+		background-color: #b5edf9;
+		-webkit-transform: translateX(9vmin);
+	transform: translateX(9vmin);
+		
+		}
+	
+		.cloud2::before
+		 {
+		content: "";
+		position: absolute;
+		width: 15vmin;
+		height: 8vmin;
+		bottom: 8vmin;
+		border-radius: 20vmin 20vmin 0 0;
+		-webkit-transform: translateX(6vmin);
+		transform: translateX(6vmin);
+		background-color: #b5edf9;
+		}
+	
+
+	.grass
+	{
+		position: relative;
+			height: 230px;
+			background: green;
+	}
+	.carbody{
+		left: 10%;
+		width: 18vmin;
+        height: 7vmin;
+		background-color: orange;
+		border-radius: 30% 30% 20% 20%;
+		position: relative;
+		z-index: 100;
+		animation: carbody 1s infinite;
+		/* animation-play-state: paused; */
+	}
+	
+@keyframes carbody{
+	from {left: 0px;}
+	to   {left: 2000px;}
+	}
+	.carbody1{
+		left: -12%;
+		width: 18vmin;
+        height: 7vmin;
+		background-color: orange;
+		border-radius: 30% 30% 20% 20%;
+		position: relative;
+		z-index: 100;
+		animation: carbody1 1s infinite;
+		/* animation-play-state: paused; */
+	}
+	
+@keyframes carbody1{
+	from {left: 2000px;}
+	to   {right: 0px;}
+	}
